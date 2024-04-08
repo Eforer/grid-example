@@ -4,7 +4,7 @@
     grid-template-rows: auto;
     grid-template-areas: 
       "header header"
-      "sidebar main"
+      "sidebar main "
       "footer footer";
     height: 100vh; /* Asignamos la altura de la ventana */
   }
@@ -28,4 +28,34 @@
     grid-area: footer; /* Asignamos el área "footer" */
     background-color: #ccc;
   }
+  
+
+
+  .search-container {
+    display: flex;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
   
